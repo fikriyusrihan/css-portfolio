@@ -1,0 +1,157 @@
+/* GLOBAL STYLE
+__________________________*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+}
+img {
+  width: 300px;
+}
+h1,
+h2 {
+  margin-top: 0;
+  font-family: "IBM Plex Mono", monospace;
+}
+.content-wrap {
+  max-width: 900px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+/* HEADER STYLE
+_________________________ */
+header {
+  background: #20639b;
+  color: white;
+}
+header .content-wrap h1 {
+  text-transform: uppercase;
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+/* FEATURED PROJECT STYLE
+_________________________ */
+.projects .separator {
+  padding-top: 48px;
+  border-bottom: 1px solid grey;
+}
+.project {
+  margin-top: 48px;
+  overflow: hidden;
+}
+.project h3 {
+  margin-top: 24px;
+}
+.project a {
+  background-color: #20639b;
+  color: white;
+  padding: 4px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+.project a:hover {
+  background-color: #20649be1;
+}
+
+/* WORK EXPERIENCE STYLE
+__________________________ */
+.work-experience .content-wrap {
+  padding-bottom: 16px;
+}
+.work-experience,
+.education {
+  background-color: #f0efeb;
+}
+.item-details h3 {
+  margin: 4px 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+
+/* EDUCATION STYLE
+__________________________ */
+.education-separator {
+  height: 48px;
+  padding: 0 48px;
+  border-top: 1px solid grey;
+}
+
+/* FOOTER STYLE 
+_________________________ */
+footer {
+  background: #173f5f;
+  color: white;
+  text-align: center;
+}
+footer h2 {
+  margin-bottom: 48px;
+}
+footer ul {
+  padding: 0;
+}
+footer ul li {
+  list-style: none;
+  padding: 4px 0;
+  color: #173f5f;
+}
+footer a {
+  background-color: rgb(248, 248, 248);
+  padding: 2px 16px;
+  border-radius: 4px;
+}
+footer a:hover {
+  background-color: rgb(214, 214, 214);
+}
+footer a:link,
+footer a:visited {
+  text-decoration: none;
+  color: #173f5f;
+}
+
+/* Responsive Layout 
+   Desktop Style
+__________________________*/
+@media screen and (min-width: 750px) {
+  
+  /* Project Style
+  ________________________ */
+  .project img {
+    float: left;
+    margin-right: 24px;
+  }
+  .project h3 {
+    margin-top: 0;
+  }
+
+  /* Work Experience
+  ________________________ */
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 24px;
+  }
+
+  /* Footer Style
+  ________________________ */
+  footer ul {
+    padding-inline-start: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+}
